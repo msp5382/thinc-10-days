@@ -1,2 +1,16 @@
- {
+@font-face {
+  font-family: "FC Iconic";
+  src: url(./fonts/FC\ Iconic\ Bold.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FC Iconic";
+  src: url(./fonts/FC\ Iconic.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: "FC Iconic";
 }
