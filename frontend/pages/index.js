@@ -28,7 +28,7 @@ const Flex = styled.div`
 export default function Home() {
   return (
     <Box>
-      รหัสนิสิต 10 หลัก
+      รหัสนิสิต 8 หลัก
       <Textbox />
       รหัสผ่าน CU-NET
       <Textbox />
