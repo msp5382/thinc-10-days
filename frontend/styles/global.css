@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: "FC Iconic";
   src: url(./fonts/FC\ Iconic\ Bold.ttf);
@@ -10,7 +11,7 @@
 }
 @font-face {
   font-family: "FC Iconic";
-  src: url(./fonts/FC\ Iconic.ttf);
+  src: url(./fonts/FC\ Iconic\ Regular.ttf);
   font-weight: 300;
   font-style: normal;
 }

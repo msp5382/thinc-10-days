@@ -18,10 +18,10 @@ const Login = () => {
         placeholder="blur"
         alt="chula logo"
       />
-      <div className="mt-14 mb-2 text-2xl">เข้าสู่ระบบลงทะเบียนเรียน</div>
+      <div className="mt-14 mb-2 text-3xl">เข้าสู่ระบบลงทะเบียนเรียน</div>
       <div
-        style={{ backgroundColor: "rgb(255,255,255,0.32)" }}
-        className="w-full max-w-xl min-h-auto rounded-3xl p-6 backdrop-blur-3xl filter"
+        style={{ backgroundColor: "rgb(255,255,255,0.5)" }}
+        className="w-full max-w-xl min-h-auto rounded-3xl p-6 backdrop-blur-3xl filter text-xl"
       >
         <LoginInput title="รหัสนิสิต 10 หลัก" />
         <LoginInput title="รหัสผ่าน CU-NET" />
