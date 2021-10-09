@@ -1,0 +1,26 @@
+<svg width="240" height="206" viewBox="0 0 240 206" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_b)">
+        <g filter="url(#filter1_f)">
+            <ellipse cx="73" cy="103" rx="23" ry="53" fill="#CACACA"/>
+        </g>
+        <circle cx="147" cy="97" r="93" fill="url(#paint0_linear)"/>
+    </g>
+    <defs>
+        <filter id="filter0_b" x="-70" y="-116" width="430" height="426" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImage" stdDeviation="60"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+        </filter>
+        <filter id="filter1_f" x="0" y="0" width="146" height="206" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur"/>
+        </filter>
+        <linearGradient id="paint0_linear" x1="183.5" y1="141" x2="94.5" y2="46.5" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFADB1" stop-opacity="0.98"/>
+            <stop offset="1" stop-color="white" stop-opacity="0.62"/>
+        </linearGradient>
+    </defs>
+</svg>

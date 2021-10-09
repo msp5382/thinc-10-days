@@ -4,6 +4,7 @@ import LoginInput from "./components/login/login_input";
 import { useRef, useState, useEffect } from "react";
 
 import LogoChula from "../public/logo_chula.png";
+import Ball from "../public/holy_shit_ball.svg";
 import Footer from "./components/Footer";
 
 const Login = () => {
@@ -36,7 +37,7 @@ const Login = () => {
         <div className="mt-8 mb-2 text-3xl">เข้าสู่ระบบลงทะเบียนเรียน</div>
         <div
           style={{ backgroundColor: "rgb(255,255,255,0.5)" }}
-          className="w-full max-w-xl min-h-auto rounded-3xl p-6 backdrop-blur-3xl filter text-xl flex flex-col justify-center"
+          className="relative w-full max-w-xl min-h-auto rounded-3xl p-6 backdrop-blur-3xl filter text-xl flex flex-col justify-center"
         >
           <LoginInput title="รหัสนิสิต 10 หลัก" />
           <LoginInput title="รหัสผ่าน CU-NET" />
@@ -78,6 +79,17 @@ const Login = () => {
             <Link className="hover:opacity-60" href="/">
               <a>ขอรับรหัส CU-NET</a>
             </Link>
+          </div>
+          <div
+            style={{
+              bottom: "4",
+              right: "0",
+              marginRight: "-80px",
+              marginBottom: "-80px",
+            }}
+            className="absolute"
+          >
+            <Image width={150} height={150} src={Ball} alt="just beautiful ball" />
           </div>
         </div>
       </div>
