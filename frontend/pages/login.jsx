@@ -40,7 +40,7 @@ const Login = () => {
           className="relative w-full max-w-xl min-h-auto rounded-3xl p-6 backdrop-blur-3xl filter text-xl flex flex-col justify-center"
         >
           <LoginInput title="รหัสนิสิต 10 หลัก" />
-          <LoginInput title="รหัสผ่าน CU-NET" />
+          <LoginInput type="password" title="รหัสผ่าน CU-NET" />
           <div className="items-center flex flex-row justify-center my-4">
             <button
               onClick={() => {}}
@@ -89,7 +89,12 @@ const Login = () => {
             }}
             className="absolute"
           >
-            <Image width={150} height={150} src={Ball} alt="just beautiful ball" />
+            <Image
+              width={150}
+              height={150}
+              src={Ball}
+              alt="just beautiful ball"
+            />
           </div>
         </div>
       </div>
