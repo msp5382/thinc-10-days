@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LogoChula from "../../public/logo_grey_chula.png";
+import LogoChula from "../public/logo_grey_chula.png";
 import React from "react";
 
 const Footer = React.forwardRef((_, ref) => {

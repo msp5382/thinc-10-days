@@ -38,3 +38,9 @@ export default function Home() {
     </Box>
   );
 }
+
+export const getServerSideProps = async ({ res }) => {
+  res.writeHead(200, { Location: "/login" });
+  res.end();
+  return { props: {} };
+};

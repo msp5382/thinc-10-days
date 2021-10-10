@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import LoginInput from "./components/login/login_input";
+import LoginInput from "../components/login/login_input";
 import { useRef, useState, useEffect } from "react";
 
 import LogoChula from "../public/logo_chula.png";
 import Ball from "../public/holy_shit_ball.svg";
-import Footer from "./components/Footer";
+import Footer from "../components/Footer";
 
 const Login = () => {
   const footerRef = useRef();
@@ -44,7 +44,7 @@ const Login = () => {
           <div className="items-center flex flex-row justify-center my-4">
             <button
               onClick={() => {}}
-              className=" rounded-xl px-6 py-2 text-xl  text-white"
+              className=" rounded-xl px-6 py-2 text-xl text-white active:shadow-inner-deep "
               style={{
                 background:
                   "linear-gradient(93.72deg, #FB70AA 11.59%, rgba(231, 78, 215, 0.9) 89.1%)",
@@ -54,9 +54,11 @@ const Login = () => {
             </button>
           </div>
           <div className="flex flex-row justify-center space-x-3 items-center">
-            <Link className="hover:opacity-60" href="/">
-              <a>เปลี่ยนรหัสผ่าน</a>
-            </Link>
+            <div className="hover:opacity-60">
+              <Link className="hover:opacity-60" href="/">
+                <a>เปลี่ยนรหัสผ่าน</a>
+              </Link>
+            </div>
             <div
               style={{
                 width: "1.5px",
@@ -65,9 +67,11 @@ const Login = () => {
                 opacity: "0.60",
               }}
             />
-            <Link className="hover:opacity-60" href="/">
-              <a>ลืมรหัสผ่าน</a>
-            </Link>
+            <div className="hover:opacity-60">
+              <Link href="/">
+                <a>ลืมรหัสผ่าน</a>
+              </Link>
+            </div>
             <div
               style={{
                 width: "1.5px",
@@ -76,19 +80,13 @@ const Login = () => {
                 opacity: "0.60",
               }}
             />
-            <Link className="hover:opacity-60" href="/">
-              <a>ขอรับรหัส CU-NET</a>
-            </Link>
+            <div className="hover:opacity-60">
+              <Link href="/">
+                <a>ขอรับรหัส CU-NET</a>
+              </Link>
+            </div>
           </div>
-          <div
-            style={{
-              bottom: "4",
-              right: "0",
-              marginRight: "-80px",
-              marginBottom: "-80px",
-            }}
-            className="absolute"
-          >
+          <div className="transform absolute bottom-1 right-0 translate-x-20 translate-y-20">
             <Image
               width={150}
               height={150}
