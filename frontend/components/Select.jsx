@@ -10,7 +10,7 @@ const Select = ({ children, value, onChange, title, width }) => {
         <select
           className="h-[39px] appearance-none outline-none w-full text-lg px-2 py-1 flex place bg-[#E7E7E74D] border-[#767676] border-[1.5px] rounded-xl "
           value={value}
-          onChange={onchange}
+          onChange={onChange}
         >
           {children}
         </select>
