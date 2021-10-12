@@ -8,7 +8,7 @@ import GlassBackButton from "../components/GlassBackButton";
 const Register = () => {
   return (
     <div
-      className="h-screen w-screen bg-cover grid grid-cols-11 p-12"
+      className="h-screen w-screen bg-cover grid grid-cols-11 p-12 overflow-scroll"
       style={{
         backgroundImage: "url(/background-pictures/register-background.svg)",
       }}
