@@ -1,28 +1,143 @@
 import Image from "next/image";
 import LogoCU from "../public/logo_CU.png";
 import BackOutlineIcon from "../public/icons/back_outline.svg";
+import TextField from "../components/TextField";
+import Button from "../components/Button";
+import Select from "../components/Select";
 
 const Register = () => {
   return (
     <div
-      className="h-screen w-screen bg-cover grid grid-cols-7 p-12"
+      className="h-screen w-screen bg-cover grid grid-cols-11 p-12"
       style={{
         backgroundImage: "url(/background-pictures/register-background.svg)",
       }}
     >
-      <div className="col-start-1 col-end-3 px-8 flex flex-col items-center">
-        <Image src={LogoCU} alt="logo_CU" placeholder="blur" />
-        <div className="px-4 py-3 mt-8 max-w-[250px] text-2xl text-center border-4 rounded-2xl filter backdrop-blur-3xl text-white border-white bg-white/30 border-dashed">
-          คุณเข้าสู่ระบบครั้งแรก <br /> กรุณากรอกข้อมูลส่วนตัว
+      <div className="col-start-2 col-end-5 pr-16 flex flex-col">
+        <div className="flex flex-col items-center">
+          <Image src={LogoCU} alt="logo_CU" placeholder="blur" />
+          <div className="px-4 py-3 mt-8 max-w-[250px] text-2xl text-center border-4 rounded-2xl filter backdrop-blur-3xl text-white border-white bg-white/30 border-dashed">
+            คุณเข้าสู่ระบบครั้งแรก <br /> กรุณากรอกข้อมูลส่วนตัว
+          </div>
         </div>
       </div>
-      <div className="col-start-3 col-span-5 pl-4">
+      <div className="col-start-5 col-span-6 pl-4">
         <div className="flex flex-row">
-          <button className="border-2 rounded-2xl border-white flex justify-center filter backdrop-blur-3xl items-center p-1 bg-white/50 active:scale-90 transition-all">
+          <button className="glass border-2 border-white rounded-2xl flex justify-center items-center p-1 active:scale-90 transition-all">
             <Image src={BackOutlineIcon} width={28} height={28} alt="back" />
           </button>
         </div>
-        <div className="my-12 bg-white/40 p-9 border-2 rounded-2xl border-white/ filter backdrop-blur-3xl"></div>
+        <div className="mt-12 py-4 px-6 border-2 rounded-2xl border-white glass flex flex-row flex-wrap space-y-2">
+          <div className="flex flex-row justify-between w-full items-center">
+            <TextField
+              width="30%"
+              title="รหัสนิสิต"
+              placeholder="ใส่รหัสนิสิต 10 หลัก"
+            />
+            <TextField
+              width="65%"
+              title="เลขบัตรประจำตัวประชาชน"
+              placeholder="ใส่เลขประจำตัว 13 หลัก"
+            />
+          </div>
+          <div className="flex flex-row justify-between w-full items-center">
+            <Select
+              width="20%"
+              title="คำนำหน้า"
+              placeholder="ใส่รหัสนิสิต 10 หลัก"
+            >
+              <option>ใส่คำนำหน้า</option>
+              <option>นาย</option>
+              <option>นางสาว</option>
+            </Select>
+            <TextField
+              width="35%"
+              title="ชื่อ"
+              placeholder="ใส่เลขประจำตัว 13 หลัก"
+            />
+            <TextField
+              width="35%"
+              title="นามสกุล"
+              placeholder="ใส่เลขประจำตัว 13 หลัก"
+            />
+          </div>
+          <div className="flex flex-row justify-between w-full items-center">
+            <Select width="35%" title="วัน/เดือน/ปี เกิด">
+              <option>ใส่คำนำหน้า</option>
+              <option>นาย</option>
+              <option>นางสาว</option>
+            </Select>
+            <Select width="20%" title="หมู่เลือด">
+              <option>O</option>
+              <option>A</option>
+              <option>B</option>
+              <option>AB</option>
+            </Select>
+            <TextField
+              width="20%"
+              title="สัญชาติ"
+              placeholder="ใส่เลขประจำตัว 13 หลัก"
+            />
+            <TextField
+              width="20%"
+              title="เชื้อชาติ"
+              placeholder="ใส่เลขประจำตัว 13 หลัก"
+            />
+          </div>
+          <div className="flex flex-row justify-between w-full items-center">
+            <TextField
+              width="25%"
+              title="ความพิการ"
+              placeholder="ใส่เลขประจำตัว 13 หลัก"
+            />
+            <TextField
+              width="35%"
+              title="เบอร์โทรศัพท์มือถือชื่อ"
+              placeholder="ใส่เลขประจำตัว 13 หลัก"
+            />
+            <TextField
+              width="35%"
+              title="อีเมล"
+              placeholder="ใส่เลขประจำตัว 13 หลัก"
+            />
+          </div>
+          <div className="flex flex-row justify-between w-full items-center">
+            <Select
+              width="60%"
+              title="โรงเรียนที่จบการศึกษา"
+              placeholder="ใส่รหัสนิสิต 10 หลัก"
+            ></Select>
+            <TextField
+              width="35%"
+              title="แผนการเรียน"
+              placeholder="ใส่เลขประจำตัว 13 หลัก"
+            />
+          </div>
+          <div className="flex flex-row justify-between w-full items-center">
+            <TextField
+              width="35%"
+              title="เกรดเฉลี่ยสะสม (GPAX)"
+              placeholder="ใส่เลขประจำตัว 13 หลัก"
+            />
+            <TextField
+              width="35%"
+              title="เข้าศึกษาจาก"
+              placeholder="ใส่เลขประจำตัว 13 หลัก"
+            />
+            <Select
+              width="25%"
+              title="ศึกษาที่จุฬาครั้งแรก"
+              placeholder="ใส่รหัสนิสิต 10 หลัก"
+            >
+              <option>ใส่คำนำหน้า</option>
+              <option>นาย</option>
+              <option>นางสาว</option>
+            </Select>
+          </div>
+          <div className="flex flex-row justify-center w-full pt-5">
+            <Button>สมัคร</Button>
+          </div>
+        </div>
       </div>
     </div>
   );

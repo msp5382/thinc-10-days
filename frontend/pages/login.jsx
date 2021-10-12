@@ -6,6 +6,7 @@ import { useRef, useState, useEffect } from "react";
 import LogoChula from "../public/logo_chula.png";
 import Ball from "../public/holy_shit_ball.svg";
 import Footer from "../components/Footer";
+import Button from "../components/Button";
 
 const Login = () => {
   const footerRef = useRef();
@@ -42,7 +43,7 @@ const Login = () => {
           <LoginInput title="รหัสนิสิต 10 หลัก" />
           <LoginInput type="password" title="รหัสผ่าน CU-NET" />
           <div className="items-center flex flex-row justify-center my-4">
-            <button
+            <Button
               onClick={() => {}}
               className=" rounded-xl px-6 py-2 text-xl text-white active:shadow-inner-deep "
               style={{
@@ -51,7 +52,7 @@ const Login = () => {
               }}
             >
               เข้าสู่ระบบ
-            </button>
+            </Button>
           </div>
           <div className="flex flex-row justify-center space-x-3 items-center">
             <div className="hover:opacity-60">
