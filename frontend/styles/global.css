@@ -11,11 +11,14 @@
 
   .glass {
     filter: var(--tw-filter);
+    background: linear-gradient(
+      104.92deg,
+      rgba(255, 255, 255, 0.648) 12.72%,
+      rgba(255, 255, 255, 0.32) 92.13%
+    );
     --tw-backdrop-blur: blur(128px);
     backdrop-filter: var(--tw-backdrop-filter);
-    background-color: rgba(255, 255, 255, 0.5);
   }
-
 }
 
 @font-face {

@@ -3,7 +3,6 @@ import DropDown from "../public/icons/drop_down.svg";
 import { useState } from "react";
 
 const Select = ({ children, value, onChange, title, width }) => {
-  const [isActivate, setIsActivate] = useState(false);
   return (
     <div style={{ width: width }}>
       <div className="text-2xl items-center">{title}</div>
@@ -11,7 +10,7 @@ const Select = ({ children, value, onChange, title, width }) => {
         <select
           className="h-[39px] appearance-none outline-none w-full text-lg px-2 py-1 flex place bg-[#E7E7E74D] border-[#767676] border-[1.5px] rounded-xl "
           value={value}
-          onChange={onChange}
+          onChange={onchange}
         >
           {children}
         </select>

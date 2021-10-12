@@ -1,9 +1,9 @@
 import Image from "next/image";
 import LogoCU from "../public/logo_CU.png";
-import BackOutlineIcon from "../public/icons/back_outline.svg";
 import TextField from "../components/TextField";
 import Button from "../components/Button";
 import Select from "../components/Select";
+import GlassBackButton from "../components/GlassBackButton";
 
 const Register = () => {
   return (
@@ -23,14 +23,12 @@ const Register = () => {
       </div>
       <div className="col-start-5 col-span-6 pl-4">
         <div className="flex flex-row">
-          <button className="glass border-2 border-white rounded-2xl flex justify-center items-center p-1 active:scale-90 transition-all">
-            <Image src={BackOutlineIcon} width={28} height={28} alt="back" />
-          </button>
+          <GlassBackButton />
         </div>
-        <div className="mt-12 py-4 px-6 border-2 rounded-2xl border-white glass flex flex-row flex-wrap space-y-2">
+        <div className="mt-12 py-4 px-6 border-2 rounded-2xl border-white/40 glass flex flex-row flex-wrap space-y-2">
           <div className="flex flex-row justify-between w-full items-center">
             <TextField
-              width="30%"
+              width="32%"
               title="รหัสนิสิต"
               placeholder="ใส่รหัสนิสิต 10 หลัก"
             />
@@ -42,7 +40,7 @@ const Register = () => {
           </div>
           <div className="flex flex-row justify-between w-full items-center">
             <Select
-              width="20%"
+              width="24%"
               title="คำนำหน้า"
               placeholder="ใส่รหัสนิสิต 10 หลัก"
             >
@@ -62,7 +60,7 @@ const Register = () => {
             />
           </div>
           <div className="flex flex-row justify-between w-full items-center">
-            <Select width="35%" title="วัน/เดือน/ปี เกิด">
+            <Select width="31%" title="วัน/เดือน/ปี เกิด">
               <option>ใส่คำนำหน้า</option>
               <option>นาย</option>
               <option>นางสาว</option>
@@ -86,7 +84,7 @@ const Register = () => {
           </div>
           <div className="flex flex-row justify-between w-full items-center">
             <TextField
-              width="25%"
+              width="24%"
               title="ความพิการ"
               placeholder="ใส่เลขประจำตัว 13 หลัก"
             />
@@ -103,7 +101,7 @@ const Register = () => {
           </div>
           <div className="flex flex-row justify-between w-full items-center">
             <Select
-              width="60%"
+              width="62%"
               title="โรงเรียนที่จบการศึกษา"
               placeholder="ใส่รหัสนิสิต 10 หลัก"
             ></Select>
@@ -125,7 +123,7 @@ const Register = () => {
               placeholder="ใส่เลขประจำตัว 13 หลัก"
             />
             <Select
-              width="25%"
+              width="24%"
               title="ศึกษาที่จุฬาครั้งแรก"
               placeholder="ใส่รหัสนิสิต 10 หลัก"
             >
