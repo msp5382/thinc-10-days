@@ -1,46 +1,17 @@
-import styled from "styled-components";
+import Image from "next/image";
 
-const Box = styled.div`
-  border: 2px solid pink;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  margin: 20px;
-`;
-
-const Textbox = styled.input`
-  width: 100px;
-  height: 20px;
-  border: 1px solid pink;
-  margin-right: 10px;
-`;
-
-const Button = styled.button`
-  height: 20px;
-  border: 1px solid pink;
-`;
-
-const Flex = styled.div`
-  display: flex;
-`;
-
-export default function Home() {
+const Index = () => {
   return (
-    <Box>
-      รหัสนิสิต 8 หลัก
-      <Textbox />
-      รหัสผ่าน CU-NET
-      <Textbox />
-      <Flex>
-        <Button>เข้าสู่ระบบ</Button>
-      </Flex>
-    </Box>
+    <div
+      style={{
+        background: "url(/background-pictures/index-background.svg)",
+        backgroundSize: "cover",
+      }}
+      className="min-h-screen min-w-screen"
+    >
+      
+    </div>
   );
-}
-
-export const getServerSideProps = async ({ res }) => {
-  res.writeHead(200, { Location: "/login" });
-  res.end();
-  return { props: {} };
 };
+
+export default Index;
