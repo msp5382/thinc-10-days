@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Navbar from "../components/navbar";
 
 const Index = () => {
   return (
@@ -7,9 +7,11 @@ const Index = () => {
         background: "url(/background-pictures/index-background.svg)",
         backgroundSize: "cover",
       }}
-      className="min-h-screen min-w-screen"
+      className="min-h-screen min-w-screen flex"
     >
-      
+      <div className="fixed top-0 w-full">
+        <Navbar />
+      </div>
     </div>
   );
 };
