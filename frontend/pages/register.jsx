@@ -51,17 +51,17 @@ const Register = () => {
             <TextField
               width="35%"
               title="ชื่อ"
-              placeholder="ใส่เลขประจำตัว 13 หลัก"
+              placeholder="ชื่อจริง ภาษาไทย"
             />
             <TextField
               width="35%"
               title="นามสกุล"
-              placeholder="ใส่เลขประจำตัว 13 หลัก"
+              placeholder="นามสกุล ภาษาไทย"
             />
           </div>
           <div className="flex flex-row justify-between w-full items-center">
             <Select width="31%" title="วัน/เดือน/ปี เกิด">
-              <option>ใส่คำนำหน้า</option>
+              <option>ใส่วัน/เดือน/ปี เกิด</option>
               <option>นาย</option>
               <option>นางสาว</option>
             </Select>
@@ -74,62 +74,62 @@ const Register = () => {
             <TextField
               width="20%"
               title="สัญชาติ"
-              placeholder="ใส่เลขประจำตัว 13 หลัก"
+              placeholder="สัญชาติ"
             />
             <TextField
               width="20%"
               title="เชื้อชาติ"
-              placeholder="ใส่เลขประจำตัว 13 หลัก"
+              placeholder="เชื้อชาติ"
             />
           </div>
           <div className="flex flex-row justify-between w-full items-center">
             <TextField
               width="24%"
               title="ความพิการ"
-              placeholder="ใส่เลขประจำตัว 13 หลัก"
+              placeholder='หากไม่มีให้ใส่ "-"'
             />
             <TextField
               width="35%"
-              title="เบอร์โทรศัพท์มือถือชื่อ"
-              placeholder="ใส่เลขประจำตัว 13 หลัก"
+              title="เบอร์โทรศัพท์มือถือ"
+              placeholder="เช่น 081-234-5678"
             />
             <TextField
               width="35%"
               title="อีเมล"
-              placeholder="ใส่เลขประจำตัว 13 หลัก"
+              placeholder="someone@example.com"
             />
           </div>
           <div className="flex flex-row justify-between w-full items-center">
             <Select
               width="62%"
               title="โรงเรียนที่จบการศึกษา"
-              placeholder="ใส่รหัสนิสิต 10 หลัก"
+              placeholder="เลือกโรงเรียนที่จบการศึกษา"
             ></Select>
             <TextField
               width="35%"
               title="แผนการเรียน"
-              placeholder="ใส่เลขประจำตัว 13 หลัก"
+              placeholder="เช่น วิทย์-คณิต"
             />
           </div>
           <div className="flex flex-row justify-between w-full items-center">
             <TextField
               width="35%"
               title="เกรดเฉลี่ยสะสม (GPAX)"
-              placeholder="ใส่เลขประจำตัว 13 หลัก"
+              placeholder="เช่น 4.00"
             />
             <TextField
-              width="35%"
+              width="30%"
               title="เข้าศึกษาจาก"
-              placeholder="ใส่เลขประจำตัว 13 หลัก"
+              placeholder="ระบุรอบที่เข้าศึกษา"
             />
             <Select
-              width="24%"
-              title="ศึกษาที่จุฬาครั้งแรก"
+              width="30%"
+              title="ศึกษาที่จุฬาฯครั้งแรก"
               placeholder="ใส่รหัสนิสิต 10 หลัก"
             >
-              <option>ใส่คำนำหน้า</option>
-              <option>นาย</option>
-              <option>นางสาว</option>
+              <option>ศึกษาที่จุฬาฯครั้งแรก</option>
+              <option>ใช่</option>
+              <option>ไม่</option>
             </Select>
           </div>
           <div className="flex flex-row justify-center w-full pt-5">

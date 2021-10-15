@@ -1,11 +1,10 @@
-import GetPasswordInfoInput from "../components/getpasswordinfo_input";
+import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
 import GlassBackButton from "../components/GlassBackButton";
 
-
-const GetPasswordInfo = () => {
+const GetPassword = () => {
   const footerRef = useRef();
   const [height, setHeight] = useState(0);
 
@@ -16,25 +15,26 @@ const GetPasswordInfo = () => {
     <div
       className="h-screen w-screen bg-cover"
       style={{
-        backgroundImage: "url(/background-pictures/getpasswordinfo-background.svg)",
+        backgroundImage: "url(/background-pictures/getpassword-background.svg)",
       }}
     >
-
       <div
         style={{
           height: `calc(100vh - ${height}px)`,
         }}
-        
         className="flex flex-col items-center justify-center py-4"
       >
-        <div className="flex flex-col"><GlassBackButton /></div>
-        <div className="mt-8 mb-2 text-3xl">นิสิตใหม่รับรหัสผ่าน CUNET</div>
+        <div className="flex flex-row"><GlassBackButton /></div>
+        <div className="mt-8 mb-2 text-3xl">ข้อมูลบัตรนิสิตและรหัส CU-NET</div>
         <div
           style={{ backgroundColor: "rgb(255,255,255,0.5)" }}
           className="relative w-full max-w-xl min-h-auto rounded-3xl p-6 backdrop-blur-3xl filter text-xl flex flex-col justify-center"
         >
-          <GetPasswordInfoInput title="เลขประจำตัวนิสิต ( Student ID )" />
-          <GetPasswordInfoInput type="password" title="เลขประจำตัวประชาชน ( Citizen ID )" />
+        <div
+          style={{ backgroundColor: "rgb(255,255,255,0.5)" }}
+          className="relative w-full max-w-xl min-h-auto rounded-3xl p-6 backdrop-blur-3xl filter text-xl flex flex-col justify-center"
+        ></div>
+        <div className="mt-8 mb-2 text-xl">Email</div>
           <div className="items-center flex flex-row justify-center my-4">
             <Button
               onClick={() => {}}
@@ -44,7 +44,7 @@ const GetPasswordInfo = () => {
                   "linear-gradient(93.72deg, #FB70AA 11.59%, rgba(231, 78, 215, 0.9) 89.1%)",
               }}
             >
-            รับรหัสผ่าน
+            เปลี่ยนรหัสผ่าน
             </Button>
           </div>
         </div>
@@ -54,4 +54,4 @@ const GetPasswordInfo = () => {
   );
 };
 
-export default GetPasswordInfo;
+export default GetPassword;
