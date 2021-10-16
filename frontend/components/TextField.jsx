@@ -1,6 +1,6 @@
-const TextField = ({ placeholder, value, onChange, title, width, type }) => {
+const TextField = ({ placeholder, value, onChange, title, width, type, ...props }) => {
   return (
-    <div style={{ width: width }}>
+    <div {...props} style={{ width: width }}>
       <div className="text-2xl items-center">{title}</div>
       <input
         type={type}
