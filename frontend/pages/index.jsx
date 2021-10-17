@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Navbar from "../components/navbar";
 import InfoCard from "../components/InfoCard";
 import MoreCard from "../components/MoreCard";
@@ -12,22 +14,25 @@ const Index = () => {
       icFile: UpLoadIC,
       title: "ระบบการอัปโหลดเอกสารแรกเข้า",
       description: "กำหนดการ และข้อมูลการส่งเอกสารสำหรับการลงทะเบียนแรกเข้า",
+      linkUrl: "/",
     },
     {
       icFile: TimeTable,
       title: "ระบบการลงทะเบียนเรียน-ถอนรายวิชา",
       description:
         "รายละเอียดเอกสารสำหรับการลงทะเบียน และข้อตกลงในการถอนรายวิชา",
+      linkUrl: "/",
     },
     {
       icFile: Book,
       title: "ตรวจสอบคะแนนอย่างไม่เป็นทางการ",
       description: "ระบบสำหรับการตรวจสอบคะแนนของนิสิต",
+      linkUrl: "/",
     },
   ];
   return (
     <>
-      <div className="fixed top-0 w-screen">
+      <div className="fixed top-0 w-screen ">
         <Navbar />
       </div>
       <div
@@ -54,13 +59,46 @@ const Index = () => {
                   imgSrc={value.icFile}
                   title={value.title}
                   description={value.description}
-                  linkUrl="/"
+                  linkUrl={value.linkUrl}
                 />
               );
             })}
           </div>
         </div>
-        <div className="col-end-8 col-span-2 "></div>
+        <div className="col-end-8 col-span-2 flex flex-col pt-36 space-y-5">
+          <div className="flex flex-col space-y-3 w-full">
+            <div className="text-2xl">ปฏิทินการศึกษา</div>
+            <div className="w-full glass text-xl rounded-xl shadow-lg flex flex-row items-center">
+              <div className="h-full shadow-2xl rounded-xl glass p-2">
+                1 ก.ค. - 20 ก.ค.
+              </div>
+              <div className="ml-6">อัปโหลดเอกสารลงทะเบียนแรกเข้า</div>
+            </div>
+          </div>
+          <div className="flex flex-col space-y-3 w-full">
+            <div className="text-2xl">เอกสารคู่มือ</div>
+            <div className="w-full p-2 glass text-xl rounded-xl shadow-lg flex flex-row items-center">
+              <div className="opacity-50 flex flex-col">
+                <Image src={Book} width={21} height={24} />
+              </div>
+              <div className="ml-6">
+                เอกสารที่ต้องใช้ในการลงทะเบียนแรกเข้าออนไลน์
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col space-y-3 w-full">
+            <div className="text-2xl">ช่องทางติดต่อสำนักงานการทะเบียน</div>
+            <div className="w-full text-black/50 p-2 glass text-xl rounded-xl shadow-lg flex flex-col">
+              <div className="text-3xl">อีเมล</div>
+              <div>
+                อาคารจามจุรี 6 ซอย บัณฑิตวิทยาลัย <br /> แขวง วังใหม่ เขตปทุมวัน
+                กรุงเทพมหานคร 10330
+              </div>
+              <div className="text-3xl">ที่อยู่</div>
+              <div>webreg@chula.ac.th</div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
