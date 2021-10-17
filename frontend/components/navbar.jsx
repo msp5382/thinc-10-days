@@ -1,3 +1,4 @@
+/* eslint-disable */
 import UserInfo from "./UserInfo";
 import Image from "next/image";
 import CULogo from "../public/logo_CU_pure.png";

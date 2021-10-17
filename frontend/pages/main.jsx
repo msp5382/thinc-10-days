@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Image from "next/image";
 
 import Navbar from "../components/navbar";
@@ -11,23 +12,17 @@ import Book from "../public/icons/book.svg";
 const Index = () => {
   const moreInfoList = [
     {
-      icFile: UpLoadIC,
-      title: "ระบบการอัปโหลดเอกสารแรกเข้า",
-      description: "กำหนดการ และข้อมูลการส่งเอกสารสำหรับการลงทะเบียนแรกเข้า",
-      linkUrl: "/",
-    },
-    {
       icFile: TimeTable,
       title: "ระบบการลงทะเบียนเรียน-ถอนรายวิชา",
       description:
         "รายละเอียดเอกสารสำหรับการลงทะเบียน และข้อตกลงในการถอนรายวิชา",
-      linkUrl: "/",
+      linkUrl: "/schedule/search",
     },
     {
       icFile: Book,
       title: "ตรวจสอบคะแนนอย่างไม่เป็นทางการ",
       description: "ระบบสำหรับการตรวจสอบคะแนนของนิสิต",
-      linkUrl: "/",
+      linkUrl: "/information/1",
     },
   ];
   return (
@@ -44,14 +39,14 @@ const Index = () => {
       >
         <div className="col-start-1 col-span-5 flex flex-col px-8 py-12 ">
           <div>
-            <div className="text-6xl">สวัสดีคุณ XXXX</div>
+            <div className="text-6xl">สวัสดีคุณ พชรพล</div>
             <div className="text-xl">
               ยินดีต้อนรับเข้าสู่ระบบจัดการข้อมูลนิสิต
             </div>
           </div>
           <InfoCard />
           <div className="space-y-4">
-            <div className="text-3xl">ข้อมูลอื่น ๆ</div>
+            <div className="text-3xl mt-5">ข้อมูลอื่น ๆ</div>
             {moreInfoList.map((value, index) => {
               return (
                 <MoreCard
@@ -79,7 +74,7 @@ const Index = () => {
             <div className="text-2xl">เอกสารคู่มือ</div>
             <div className="w-full p-2 glass text-xl rounded-xl shadow-lg flex flex-row items-center">
               <div className="opacity-50 flex flex-col">
-                <Image src={Book} width={21} height={24} />
+                <Image alt="" src={Book} width={21} height={24} />
               </div>
               <div className="ml-6">
                 เอกสารที่ต้องใช้ในการลงทะเบียนแรกเข้าออนไลน์

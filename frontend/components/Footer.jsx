@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import Image from "next/image";
 import LogoChula from "../public/logo_grey_chula.png";
 import React from "react";

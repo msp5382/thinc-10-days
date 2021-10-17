@@ -1,6 +1,6 @@
+/* eslint-disable */
 import Image from "next/image";
-import Link from "next/link";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Navbar from "../../components/navbar";
 import TextField from "../../components/TextField";
 import axios from "axios"

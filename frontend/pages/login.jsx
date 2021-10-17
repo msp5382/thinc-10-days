@@ -7,6 +7,7 @@ import LogoChula from "../public/logo_chula.png";
 import Ball from "../public/holy_shit_ball.svg";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
+import axios from "axios";
 
 const Login = () => {
   const footerRef = useRef();
@@ -15,6 +16,12 @@ const Login = () => {
   useEffect(() => {
     setHeight(footerRef.current?.offsetHeight ?? 0);
   }, [footerRef]);
+
+  const handleClick = () => {
+    localStorage.setItem('token', 'testststtststs')
+    window.location.href = "/main";
+  }
+
   return (
     <div
       className="h-screen w-screen bg-cover"
@@ -44,7 +51,7 @@ const Login = () => {
           <LoginInput type="password" title="รหัสผ่าน CU-NET" />
           <div className="items-center flex flex-row justify-center my-4">
             <Button
-              onClick={() => {}}
+              onClick={handleClick}
               className=" rounded-xl px-6 py-2 text-xl text-white active:shadow-inner-deep "
               style={{
                 background:

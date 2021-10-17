@@ -21,7 +21,7 @@ const MoreCard = ({ imgSrc, title, description, linkUrl }) => {
       <div className="flex flex-col justify-center">
         <Link href={linkUrl}>
           <a>
-            <button className="border-2 border-black rounded-full text-2xl px-12 py-2">
+            <button className="outline-none border-2 border-black rounded-full text-2xl px-12 py-2">
               ไปต่อ
             </button>
           </a>

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import Image from "next/image";
 import Correct from "../public/icons/correct.svg";
 
@@ -23,9 +25,8 @@ const StepProgressBar = ({ curStep }) => {
                         : "rgba(255, 255, 255, 0)",
                     boxShadow: " 1px 1px 4px rgba(0, 0, 0, 0.3)",
                   }}
-                  className={`min-w-[55px] min-h-[55px] rounded-full text-3xl flex flex-col justify-center items-center border-[3px] border-pink-400 ${
-                    curStep == index ? "text-white" : "text-pink-500"
-                  }`}
+                  className={`min-w-[55px] min-h-[55px] rounded-full text-3xl flex flex-col justify-center items-center border-[3px] border-pink-400 ${curStep == index ? "text-white" : "text-pink-500"
+                    }`}
                 >
                   {curStep > index ? (
                     <Image width={25} height={25} src={Correct} />

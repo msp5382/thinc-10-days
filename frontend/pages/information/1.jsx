@@ -65,7 +65,9 @@ const Information1 = () => {
             <div className="flex flex-row items-center">
               ท่านเดินทางมาศึกษาโดย
               <div className="w-[150px] mx-2">
-                <Select />
+                <Select >
+
+                </Select >
               </div>
               ท่านช่วยทำงานบ้านสัปดาห์ละ
               <div className="w-[100px] mx-2">
