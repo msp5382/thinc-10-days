@@ -57,9 +57,7 @@ const findSubject = (keyword) => {
       "variables": {
         "filter": {
           "keyword": keyword,
-          "dayOfWeeks": [
-            "MO"
-          ],
+          "dayOfWeeks": [],
           "limit": 15,
           "offset": 0
         },
