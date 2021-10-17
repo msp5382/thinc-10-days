@@ -7,7 +7,6 @@ const StepProgressBar = ({ curStep }) => {
     "ข้อมูลครอบครัว",
     "ที่อยู่",
     "กิจกรรมนอกหลักสูตร",
-    "พิมพ์เอกสาร",
   ];
   return (
     <div className="flex flex-col">
@@ -24,7 +23,7 @@ const StepProgressBar = ({ curStep }) => {
                         : "rgba(255, 255, 255, 0)",
                     boxShadow: " 1px 1px 4px rgba(0, 0, 0, 0.3)",
                   }}
-                  className={`w-[55px] h-[55px] rounded-full text-3xl flex flex-col justify-center items-center border-[3px] border-pink-400 ${
+                  className={`min-w-[55px] min-h-[55px] rounded-full text-3xl flex flex-col justify-center items-center border-[3px] border-pink-400 ${
                     curStep == index ? "text-white" : "text-pink-500"
                   }`}
                 >

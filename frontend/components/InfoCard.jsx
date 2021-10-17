@@ -34,7 +34,13 @@ const InfoCard = () => {
           </div>
         </div>
         <div className="w-[250px] flex flex-col">
-          <Button>กรอกข้อมูล</Button>
+          <Button
+            onClick={() => {
+              window.location.href = "/information/1";
+            }}
+          >
+            กรอกข้อมูล
+          </Button>
         </div>
       </div>
       <div

@@ -1,3 +1,6 @@
+import Button from "../../components/Button";
+import BackButton from "../../components/BackButton";
+
 import Navbar from "../../components/navbar";
 import StepProgressBar from "../../components/StepProgressBar";
 import TextField from "../../components/TextField";
@@ -70,7 +73,7 @@ const Information2 = () => {
               </div>
               บาท
             </div>
-            <div className="flex flex-row items-center text-3xl space-x-2">
+            <div className="flex flex-row items-center text-3xl space-x-2 mt-4">
               <div>ข้อมูลมารดา</div>
               <div className="text-lg space-x-2 flex flex-row items-center mt-2">
                 <input type="radio" />
@@ -113,7 +116,7 @@ const Information2 = () => {
               </div>
               บาท
             </div>
-            <div className="flex flex-row items-center text-3xl space-x-2">
+            <div className="flex flex-row items-center text-3xl space-x-2 mt-4">
               <div>
                 ข้อมูลผู้ปกครอง{" "}
                 <span className="text-lg">
@@ -125,46 +128,6 @@ const Information2 = () => {
             <div className="flex flex-row items-center">
               ชื่อผู้ปกครอง
               <div className="w-[300px] mx-2">
-                <TextField />
-              </div>
-              เชื้อชาติ
-              <div className="w-[80px] mx-2">
-                <TextField />
-              </div>
-              สัญชาติ
-              <div className="w-[80px] mx-2">
-                <TextField />
-              </div>
-            </div>
-            <div className="flex flex-row items-center">
-              วุฒิการศึกษาสูงสุดของมารดา
-              <div className="w-[150px] mx-2">
-                <Select />
-              </div>
-              อาชีพของมารดา
-              <div className="w-[150px] mx-2">
-                <Select />
-              </div>
-            </div>
-            <div className="flex flex-row items-center">
-              รายได้เฉพาะของมารดาโดยเฉลี่ยเดือนละ
-              <div className="w-[120px] mx-2">
-                <TextField />
-              </div>
-              บาท
-            </div>
-            <div className="flex flex-row items-center text-3xl space-x-2">
-              <div>
-                ข้อมูลผู้ปกครอง{" "}
-                <span className="text-lg">
-                  (ในกรณีที่ไม่ได้อยู่กับบิดามารดา)
-                </span>
-              </div>
-            </div>
-            <div className="w-full h-[2px] bg-black" />
-            <div className="flex flex-row items-center">
-              ชื่อผู้ปกครอง
-              <div className="w-[120px] mx-2">
                 <TextField />
               </div>
               เชื้อชาติ
@@ -218,6 +181,22 @@ const Information2 = () => {
                 <TextField />
               </div>
               บาท
+            </div>
+            <div className="flex flex-row w-full justify-center space-x-4">
+              <BackButton
+                onClick={() => {
+                  window.location.href = "/information/1";
+                }}
+              >
+                ย้อนกลับ
+              </BackButton>
+              <Button
+                onClick={() => {
+                  window.location.href = "/information/3";
+                }}
+              >
+                หน้าถัดไป
+              </Button>
             </div>
           </div>
         </div>

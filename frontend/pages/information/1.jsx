@@ -1,3 +1,5 @@
+import Button from "../../components/Button";
+import BackButton from "../../components/BackButton";
 import Navbar from "../../components/navbar";
 import StepProgressBar from "../../components/StepProgressBar";
 import TextField from "../../components/TextField";
@@ -109,6 +111,22 @@ const Information1 = () => {
               <div className="w-[120px] mx-2">
                 <Select />
               </div>
+            </div>
+            <div className="flex flex-row w-full justify-center space-x-4">
+              <BackButton
+                onClick={() => {
+                  window.location.href = "/";
+                }}
+              >
+                ย้อนกลับ
+              </BackButton>
+              <Button
+                onClick={() => {
+                  window.location.href = "/information/2";
+                }}
+              >
+                หน้าถัดไป
+              </Button>
             </div>
           </div>
         </div>

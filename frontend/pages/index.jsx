@@ -32,7 +32,7 @@ const Index = () => {
   ];
   return (
     <>
-      <div className="fixed top-0 w-screen ">
+      <div className="fixed top-0 w-screen z-50 ">
         <Navbar />
       </div>
       <div
