@@ -52,7 +52,7 @@ const findSubject = (keyword) => {
   const source = CancelToken.source();
 
   return {
-    data: axios.post('https://api.cugetreg.com/graphql', {
+    data: axios.post('https://cugetreg.com/api/graphql', {
       "operationName": "Search",
       "variables": {
         "filter": {
